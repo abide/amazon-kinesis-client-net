@@ -49,12 +49,35 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actions\Action.cs" />
+    <Compile Include="Actions\CheckpointAction.cs" />
+    <Compile Include="Checkpointer.cs" />
+    <Compile Include="ErrorHandlers\CheckpointErrorHandler.cs" />
+    <Compile Include="Defaults\DefaultInitializationInput.cs" />
+    <Compile Include="Defaults\DefaultKclProcess.cs" />
+    <Compile Include="Defaults\DefaultProcessRecordsInput.cs" />
+    <Compile Include="Defaults\DefaultRecord.cs" />
+    <Compile Include="Defaults\DefaultShutdownInput.cs" />
+    <Compile Include="Interface\InitializationInput.cs" />
+    <Compile Include="Actions\InitializeAction.cs" />
+    <Compile Include="Models\IoHandler.cs" />
+    <Compile Include="Interface\IRecordProcessor.cs" />
+    <Compile Include="KclProcess.cs" />
+    <Compile Include="Exceptions\MalformedActionException.cs" />
+    <Compile Include="Actions\ProcessRecordsAction.cs" />
+    <Compile Include="Interface\ProcessRecordsInput.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ClientLibrary.cs" />
-    <Compile Include="ClientLibraryTest.cs" />
+    <Compile Include="Models\Record.cs" />
+    <Compile Include="Tests\ClientLibraryTest.cs" />
+    <Compile Include="ErrorHandlers\RetryingCheckpointErrorHandler.cs" />
+    <Compile Include="Actions\ShutdownAction.cs" />
+    <Compile Include="Interface\ShutdownInput.cs" />
+    <Compile Include="Models\ShutdownReason.cs" />
+    <Compile Include="Actions\StatusAction.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -43,8 +43,11 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainClass.cs" />
+    <Compile Include="OperatingSystemCategory.cs" />
+    <Compile Include="Options.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Bootstrap.cs" />
+    <Compile Include="MavenPackage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
